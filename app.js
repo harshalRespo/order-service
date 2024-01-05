@@ -18,6 +18,7 @@ const limiter = rateLimit({
 
 app.use(`${serviceRootContext}`, limiter)
 app.get('/order-service/api/v2/', function (req, res) {
+    console.log('Hello from order service !!')
     res.send('Hello from order service !!')
 })
 
